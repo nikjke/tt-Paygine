@@ -1,0 +1,23 @@
+.btn {
+    &--text {
+        gap: .25rem;
+        padding: 0;
+        background-color: var(--color-text-btn-bg);
+        font-weight: 500;
+        color: var(--color-text-btn-text);
+
+        path {
+            transition: .4s ease;
+            stroke: var(--color-text-btn-icon);
+        }
+
+        &:hover {
+            background-color: var(--color-text-btn-hover-bg);
+            color: var(--color-text-btn-hover-text);
+
+            path {
+                stroke: var(--color-text-btn-hover-icon);
+            }
+        }
+    }
+}

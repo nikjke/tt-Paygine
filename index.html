@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test Paygine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="site-header__wrapper">
+        <a href="#" class="site-header__logo-link" aria-label="Перейти на главную страницу">
+          <img src="/public/images/logo.svg" alt="Логотип Paygine - на главную страницу" class="site-header__logo" width="118" height="32">
+        </a>
+        <nav class="site-header__nav-menu" aria-label="Основное меню">
+          <ul class="site-header__nav-list">
+            <li class="site-header__nav-item">
+              <a href="#" class="site-header__nav-link">Решения</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a href="#" class="site-header__nav-link">Интеграции</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a href="#" class="site-header__nav-link">Фрод-радар</a>
+            </li>
+            <li class="site-header__nav-item">
+              <a href="#" class="site-header__nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="site-header__right">
+          <a href="tel:+78007772937" class="site-header__phone">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.037 16.8692C10.73 17.2041 11.3865 17.4135 11.9584 17.5436C12.8622 17.7491 13.7501 17.5232 14.5335 17.0592C15.2187 16.6532 15.6595 15.9562 15.9834 15.2285L16.5166 14.0308L12.7222 11.9602L12.0491 13.2265C12.0491 13.2265 9.73346 13.7295 8.16275 11.0089C6.59203 8.28836 8.18541 6.53445 8.18541 6.53445L9.68127 6.54847L9.72266 2.26332L8.41885 2.1262C7.62672 2.0429 6.80267 2.07605 6.10843 2.46648C5.31494 2.91272 4.67541 3.56854 4.40147 4.45403C3.85581 6.21783 3.57229 9.10095 5.54608 12.5197C6.13118 13.5331 6.7747 14.3512 7.43748 15.0114" stroke="#0BB6B9" stroke-width="1.5"/>
+            </svg>
+            +7 800 777-29-37
+          </a>
+          <button class="site-header__search-btn btn btn--text" aria-label="Поиск по сайту">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.3481 13.3479L16.75 16.7498L17.8839 17.8837" stroke="#0BB6B9" stroke-width="1.5" />
+              <path d="M12.515 4.16667C9.59213 2.47913 5.85464 3.48059 4.1671 6.40349C2.89654 8.60416 3.15029 11.2666 4.60075 13.1682C5.07677 13.7923 5.68169 14.3344 6.40392 14.7514C9.32682 16.439 13.0643 15.4375 14.7519 12.5146C15.9127 10.504 15.8011 8.10796 14.667 6.25884" stroke="#0BB6B9" stroke-width="1.5" />
+            </svg>
+            Поиск
+          </button>
+          <button class="site-header__login-btn" aria-label="Войти в личный кабинет">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10.2301" cy="5.83414" r="3.61192" stroke="white" stroke-width="1.5" />
+              <path d="M17.4033 18.1076H8.04234H3.3335V14.7634C3.3335 13.2845 4.24912 11.9606 5.69211 11.0727C6.95403 11.9851 8.37344 12.4632 9.80041 12.5071C10.6556 12.5334 11.5136 12.4037 12.3419 12.118C13.0354 11.8789 13.7081 11.5305 14.3412 11.0727C15.7841 11.9606 16.6998 13.2845 16.6998 14.7634" stroke="white" stroke-width="1.5" />
+            </svg>
+            Личный кабинет
+          </button>
+          <button class="site-header__mobile-menu" aria-expanded="false" aria-label="Открыть мобильное меню">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 8L6.96203e-05 8" stroke="#151616" stroke-width="1.5"/>
+              <path d="M16 14L6.96203e-05 14" stroke="#151616" stroke-width="1.5"/>
+              <path d="M15.9999 2L0 2" stroke="#151616" stroke-width="1.5"/>
+            </svg>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_159_1752)">
+                <path d="M14.9497 14.9496L1.00006 0.999933" stroke="#151616" stroke-width="1.5"/>
+                <path d="M0.999999 14.9497L14.9497 1.00006" stroke="#151616" stroke-width="1.5"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_159_1752">
+                  <rect width="16" height="16" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="site-main">
+      <section class="products">
+        <div class="products__wrapper">
+          <h2>Наши продукты</h2>
+          <ul class="products__list">
+            <li class="products__item">
+              <div class="products__item-wrapper">
+                <div class="products__item-content">
+                  <div class="products__item-header">
+                    <h3 class="products__item-title">Виртуальные карты</h3>
+                    <div class="products__item-description">Полноценный карточный продукт для нефинансовых организаций</div>
+                  </div>
+                  <ul class="products__item-sublist">
+                    <li class="products__item-subitem">Программы лояльности и кэшбэк</li>
+                    <li class="products__item-subitem">Срок действия <br>карты до 5 лет</li>
+                    <li class="products__item-subitem">Быстрый выпуск</li>
+                    <li class="products__item-subitem">Удобный личный кабинет</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <a href="https://methodpay.ru/" class="products__item-wrapper" target="_blank" aria-label="Подробнее о продукте Method">
+                <div class="products__item-content">
+                  <div class="products__item-header">
+                    <h3 class="products__item-title">Method</h3>
+                    <div class="products__item-description">Экономный эквайринг</div>
+                  </div>
+                  <ul class="products__item-sublist">
+                    <li class="products__item-subitem">СБП, МИР, кредитование и рассрочка</li>
+                    <li class="products__item-subitem">Рекурренты, <br>холдирование</li>
+                    <li class="products__item-subitem">Оплата по QR/NFC</li>
+                    <li class="products__item-subitem">Интеграции со всеми CMS, кассами и ПО</li>
+                  </ul>
+                  <div class="products__item-btn">
+                    О продукте
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_2006_5767)">
+                        <path d="M1.22217 1.22223H9.77772M9.77772 1.22223V9.77778M9.77772 1.22223L1.22217 9.77778" stroke="white" stroke-width="1.5" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2006_5767">
+                          <rect width="11" height="11" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="products__item">
+              <div class="products__item-wrapper">
+                <div class="products__item-content">
+                  <div class="products__item-header">
+                    <h3 class="products__item-title">Банк по API</h3>
+                    <div class="products__item-description">Старт ваших финтех-продуктов</div>
+                  </div>
+                  <ul class="products__item-sublist">
+                    <li class="products__item-subitem">Переводы между физлицами</li>
+                    <li class="products__item-subitem">Автоматизация платежей <br>и возвратов</li>
+                    <li class="products__item-subitem">Удобное API</li>
+                    <li class="products__item-subitem">Отчётность</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <div class="products__item-wrapper">
+                <div class="products__item-content">
+                  <div class="products__item-header">
+                    <h3 class="products__item-title">Банки и МФО</h3>
+                    <div class="products__item-description">Автоматизация финансовых потоков</div>
+                  </div>
+                  <ul class="products__item-sublist">
+                    <li class="products__item-subitem">Погашение кредитов <br>и займов</li>
+                    <li class="products__item-subitem">Массовые <br>выплаты</li>
+                    <li class="products__item-subitem">сard2сard <br>переводы</li>
+                    <li class="products__item-subitem">Интеграция IVR-платежей</li>
+                    <li class="products__item-subitem">Мультиплатеж <br>и сплитование</li>
+                    <li class="products__item-subitem">Транзакционный <br>скоринг</li>
+                    <li class="products__item-subitem">KYC, проверка паспорта</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <div class="products__item-wrapper">
+                <div class="products__item-content">
+                  <div class="products__item-header">
+                    <h3 class="products__item-title">Кубышка</h3>
+                    <div class="products__item-description">Финансовое облако для управления деньгами </div>
+                  </div>
+                  <ul class="products__item-sublist">
+                    <li class="products__item-subitem">Платежный шлюз</li>
+                    <li class="products__item-subitem">Безопасная сделка</li>
+                    <li class="products__item-subitem">Сбор, хранение <br>и сплитование платежей</li>
+                    <li class="products__item-subitem">Быстрые выплаты</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <a href="#" class="products__item-wrapper" aria-label="Узнать больше о Фрод-радаре">
+                <div class="products__item-content">
+                  <div class="products__item-header">
+                    <h3 class="products__item-title">Фрод-радар</h3>
+                    <div class="products__item-description">Превенция ваших убытков</div>
+                  </div>
+                  <ul class="products__item-sublist">
+                    <li class="products__item-subitem">Паттерн-адаптированная ML-модель</li>
+                    <li class="products__item-subitem">Решения в реальном <br>времени (&lt;100 мс)</li>
+                    <li class="products__item-subitem">Антиспуфинг <br>геолокации</li>
+                    <li class="products__item-subitem">Автоответ на данные СИОМ/АСОИ</li>
+                  </ul>
+                  <div class="products__item-btn">
+                    Подробнее
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="technologies">
+        <div class="technologies__wrapper">
+          <h2 class="technologies__title">Технологии</h2>
+          <div class="technologies__item">
+            <div class="technologies__left">
+              <h3 class="technologies__item-title">Готовая интеграция с вашей CMS</h3>
+              <div class="technologies__description">Все известные CMS — наши партнеры. <br>Не нужно привлекать дизайнеров и разработчиков — <br>вся настройка в несколько кликов</div>
+            </div>
+            <div class="technologies__right">
+              <div class="technologies__parallax-container">
+                <img src="/public/images/technologies-parallax-1.png" alt="" class="technologies__parallax-img">
+              </div>
+              <ul class="technologies__list">
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms.png" alt="логотип битрикс" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (1).png" alt="логотип опенкарт" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (2).png" alt="логотип шоп скрипт" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (3).png" alt="логотип джумла" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (4).png" alt="логотип могута цмс" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (5).png" alt="логотип амиро цмс" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (6).png" alt="логотип симпла" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (7).png" alt="логотип диафан цмс" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (8).png" alt="логотип инсейлс" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (9).png" alt="логотип вордпресс" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (10).png" alt="логотип преста шоп" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (11).png" alt="логотип юми цмс" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (12).png" alt="логотип цс карт" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (13).png" alt="логотип эквид" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (14).png" alt="логотип тильда" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (15).png" alt="логотип друпал" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cms (16).png" alt="логотип хост цмс" class="technologies__item-img" loading="lazy">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="technologies__item">
+            <div class="technologies__left">
+              <h3 class="technologies__item-title">Интеграции с облачными кассами</h3>
+              <div class="technologies__description">Автоматическая фискализация платежей по 54-ФЗ через облачные кассы</div>
+            </div>
+            <div class="technologies__right">
+              <div class="technologies__parallax-container">
+                <img src="/public/images/technologies-parallax-2.png" alt="" class="technologies__parallax-img">
+              </div>
+              <ul class="technologies__list">
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cloud_cash_registers.png" alt="логотип клауд кассир" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cloud_cash_registers (1).png" alt="логотип атол онлайн и клауд кассир" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cloud_cash_registers (2).png" alt="логотип кит онлайн и клауд кассир" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cloud_cash_registers (3).png" alt="логотип бизнес.ру и клауд кассир" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_cloud_cash_registers (4).png" alt="логотип оранж дата и клауд кассир" class="technologies__item-img" loading="lazy">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="technologies__item">
+            <div class="technologies__left">
+              <h3 class="technologies__item-title">Интеграция с ПО и CRM</h3>
+            </div>
+            <div class="technologies__right">
+              <div class="technologies__parallax-container">
+                <img src="/public/images/technologies-parallax-3.png" alt="" class="technologies__parallax-img">
+              </div>
+              <ul class="technologies__list">
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_po_crm.png" alt="логотип амо црм" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_po_crm (1).png" alt="логотип битрикс 24" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_po_crm (2).png" alt="логотип ретейл црм" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_po_crm (3).png" alt="логотип 1с битрикс" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_po_crm (4).png" alt="логотип р кипер" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_po_crm (5).png" alt="логотип иико" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_po_crm (6).png" alt="логотип фиделио" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_po_crm (7).png" alt="логотип эдельвейс" class="technologies__item-img" loading="lazy">
+                </li>
+                <li class="technologies__list-item">
+                  <img src="/public/images/logo_po_crm (8).png" alt="логотип интеллект стайл" class="technologies__item-img" loading="lazy">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
